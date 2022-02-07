@@ -1,4 +1,4 @@
-# Exploring Kibana
+Exploring Kibana
 
 Add the sample web log data to Kibana
 
