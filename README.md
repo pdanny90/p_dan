@@ -7,4 +7,4 @@ Most of the scripts are used to configure cloud servers with differnt docker con
 
 The final setup was 4 servers running vulnerable DVWA containers along with a jump box and a server running an ELK stack container.
 
-![](diagrams/Diagram.png)
+![](diagrams/Diagram.jpg)
