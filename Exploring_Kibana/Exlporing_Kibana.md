@@ -7,7 +7,7 @@ Answer the following questions:
 In the last 7 days, how many unique visitors were located in India?
 225
 
-![SC](/Exploring_Kibana/1 India.png)
+![SC](1 India.png)
 
 In the last 24 hours, of the visitors from China, how many were using Mac OSX?
 11
