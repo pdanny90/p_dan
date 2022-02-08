@@ -1,4 +1,4 @@
-Exploring Kibana
+# Exploring Kibana
 
 Add the sample web log data to Kibana
 
@@ -7,7 +7,7 @@ Answer the following questions:
 In the last 7 days, how many unique visitors were located in India?
 225
 
-![alt text] (https://github.com/pdanny90/p_dan/blob/main/Exploring_Kibana/1%20India.png)
+
 
 In the last 24 hours, of the visitors from China, how many were using Mac OSX?
 11
