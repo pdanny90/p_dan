@@ -37,27 +37,26 @@ This document contains the following details:
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 
 Load balancing ensures that the application will be highly available, in addition to restricting access to the network.
-- _TODO: What aspect of security do load balancers protect? What is the advantage of a jump box?_
+The benefits to a load balancer can add layers of security such as protection against DDoS and authenticate user access. They are also easy to scale and can increase performance and response time.
 
-Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the _____ and system _____.
-- _TODO: What does Filebeat watch for?_
-- _TODO: What does Metricbeat record?_
+Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the logs and system metrics.
+Filebeat is then used as a logging agent that is often used to monitor data and forwards it to a centralized location like Elasticsearch or Logstash. However, metricbeat on the other hand helps to measure the behavior and monitors the usage of a system's resources and also forwards them to Elasticsearch or Logstash.
 
 The configuration details of each machine may be found below.
 
 | Name     | Function | IP Address | Operating System |
 |----------|----------|------------|------------------|
 | Jump Box | Gateway  | 10.0.0.1   | Linux  Ubuntu 18.04 LTS |
-| Elk      |          | 10.1.0.4   | Linux  Ubuntu 18.04 LTS |
-| Web 1    |          | 10.0.0.5   | Linux  Ubuntu 18.04 LTS |
-| Web 2    |          | 10.0.0.6   | Linux  Ubuntu 18.04 LTS |
-| Web 3    |          | 10.0.0.7   | Linux  Ubuntu 18.04 LTS |
+| Elk      | ElkStack | 10.1.0.4   | Linux  Ubuntu 18.04 LTS |
+| Web 1    | Server   | 10.0.0.5   | Linux  Ubuntu 18.04 LTS |
+| Web 2    | Server   | 10.0.0.6   | Linux  Ubuntu 18.04 LTS |
+| Web 3    | Server   | 10.0.0.7   | Linux  Ubuntu 18.04 LTS |
 
 ### Access Policies
 
 The machines on the internal network are not exposed to the public Internet. 
 
-Only the _____ machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
+Only the Elk Stack and Jumpbox machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
 - _TODO: Add whitelisted IP addresses_
 
 Machines within the network can only be accessed by _____.
@@ -83,7 +82,7 @@ The playbook implements the following tasks:
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-![TODO: Update the path with the name of your screenshot of docker ps output](Images/docker_ps_output.png)
+![](https://github.com/pdanny90/p_dan/blob/main/elk_images/elk.png)
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
