@@ -57,10 +57,12 @@ The configuration details of each machine may be found below.
 The machines on the internal network are not exposed to the public Internet. 
 
 Only the Elk Stack and Jumpbox machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
-  **100.36.98.117**
+  
+-  Public Host IP **100.36.98.117**
 
 Machines within the network can only be accessed through the JumpBox.
-  **100.36.98.117**
+  
+-  Private IP **10.0.0.4**
 
 A summary of the access policies in place can be found in the table below.
 
