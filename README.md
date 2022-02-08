@@ -36,10 +36,10 @@ This document contains the following details:
 
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 
-Load balancing ensures that the application will be highly available, in addition to restricting access to the network.
+- Load balancing ensures that the application will be highly available, in addition to restricting access to the network.
 The benefits to a load balancer can add layers of security such as protection against DDoS and authenticate user access. They are also easy to scale and can increase performance and response time.
 
-Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the logs and system metrics.
+- Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the logs and system metrics.
 Filebeat is then used as a logging agent that is often used to monitor data and forwards it to a centralized location like Elasticsearch or Logstash. However, metricbeat on the other hand helps to measure the behavior and monitors the usage of a system's resources and also forwards them to Elasticsearch or Logstash.
 
 The configuration details of each machine may be found below.
@@ -78,9 +78,10 @@ Ansible was used to automate configuration of the ELK machine. No configuration 
 Using Ansible serve a variety of benefits that allows one to easily administer tasks across machines such as configuring and installing applications. This lightweight method consumes less resources and greatly negates human error during configuration. Through the use of containers and applications allows administrators to have the most flexibility to reproduce an environment across various systems, detect vulnerabilities and review logs.
 
 The playbook implements the following tasks:
-First, the playbook was configured to install docker.io and python3.
-Second, ensure that docker is successfully running by running sudo systemctl status docker.
-Last, run the Elk Container.
+
+1. First, the playbook was configured to install docker.io and python3.
+2. Second, ensure that docker is successfully running by running sudo systemctl status docker.
+3. Last, run the Elk Container.
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
@@ -89,23 +90,23 @@ The following screenshot displays the result of running `docker ps` after succes
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
 
-**Web 1: 10.0.0.5**
+- **Web 1: 10.0.0.5**
 
-**Web 2: 10.0.0.6**
+- **Web 2: 10.0.0.6**
 
-**Web 3: 10.0.0.7**
+- **Web 3: 10.0.0.7**
 
 We have installed the following Beats on these machines:
 
-**Metricbeat**
+- **Metricbeat**
 
-**Filebeat**
+- **Filebeat**
 
 These Beats allow us to collect the following information from each machine:
 
-**Filebeat is used to pass information of the systems logs from the Web virtual machines in friendly readable format**
+- **Filebeat is used to pass information of the systems logs from the Web virtual machines in friendly readable format**
 
-**Metricbeat then reports the system's metrics such as how many resources the machines are using.**
+- **Metricbeat then reports the system's metrics such as how many resources the machines are using.**
 
 
 ### Using the Playbook
