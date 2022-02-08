@@ -67,10 +67,10 @@ A summary of the access policies in place can be found in the table below.
 | Name     | Publicly Accessible | Allowed IP Addresses |
 |----------|---------------------|----------------------|
 | Jump Box | Yes                 | 100.36.98.117        |
+| Elk      | Yes                 | 100.36.98.117        |
 | Web 1    | No                  | 10.0.0.4             |
 | Web 2    | No                  | 10.0.0.4             |
 | Web 3    | No                  | 10.0.0.4             |
-| Elk      | Yes                 | 100.36.98.117        |
 
 ### Elk Configuration
 
