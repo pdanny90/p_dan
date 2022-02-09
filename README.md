@@ -3,7 +3,7 @@ Linux &amp; Ansible Scripts GW Cyber Security
 # Cloud Network
 This is a collection of Linux Scripts and Ansible Scripts from my CyberClass.
 
-Most of the scripts are used to configure cloud servers with differnt docker containers.
+Most of the scripts are used to configure cloud servers with different docker containers.
 
 The final setup was 4 servers running vulnerable DVWA containers along with a jump box and a server running an ELK stack container.
 
@@ -24,7 +24,7 @@ These files have been tested and used to generate a live ELK deployment on Azure
 [Elk Playbook](https://github.com/pdanny90/p_dan/blob/main/ansible/install-elk.yml)
 
 This document contains the following details:
-- Description of the Topologu
+- Description of the Topology
 - Access Policies
 - ELK Configuration
   - Beats in Use
@@ -77,7 +77,7 @@ A summary of the access policies in place can be found in the table below.
 ### Elk Configuration
 
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
-Using Ansible serve a variety of benefits that allows one to easily administer tasks across machines such as configuring and installing applications. This lightweight method consumes less resources and greatly negates human error during configuration. Through the use of containers and applications allows administrators to have the most flexibility to reproduce an environment across various systems, detect vulnerabilities and review logs.
+Using Ansible serves a variety of benefits that allows one to easily administer tasks across machines such as configuring and installing applications. This lightweight method consumes less resources and greatly negates human error during configuration. Through the use of containers and applications allows administrators to have the most flexibility to reproduce an environment across various systems, detect vulnerabilities and review logs.
 
 The playbook implements the following tasks:
 
@@ -118,7 +118,7 @@ SSH into the control node and follow the steps below:
   
       *Copy the elk-stack-playbook.yml file to /etc/ansible.*
   
-      *Update the hosts file to include the the Elk's virtual machine's IP address.*
+      *Update the hosts file to include the Elk's virtual machine's IP address.*
   
       *Run the playbook, and navigate to http://20.114.172.178:5601/app/kibana to check that the installation worked as expected.*
 
@@ -130,7 +130,7 @@ SSH into the control node and follow the steps below:
 
 2. Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?_ 
 
-  **hosts** file and withing the same hosts file one should have the webservers and a seperate group for the elk server.
+  **hosts** file and within the same hosts file one should have the web servers and a separate group for the elk server.
 
 3. Which URL do you navigate to in order to check that the ELK server is running?
   
